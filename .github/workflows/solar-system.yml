@@ -50,8 +50,8 @@ jobs:
         - name: Install Dependencies
           run: npm install
         - name: Run Code Coverage
-          continue-on-error: true
-          run: npm run code-coverage
+        - continue-on-error: true
+          run: npm run coverage
 
         - name: Upload report
           if: always()
